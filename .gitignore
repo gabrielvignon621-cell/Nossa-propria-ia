@@ -1,19 +1,19 @@
 # Dependencies
-node_modules
-.pnp
+node_modules/
+/.pnp
 .pnp.js
 
 # Testing
-coverage
+/coverage
 
 # Production
-build
-dist
-.next
-out
+/build
+/.next
+/out
 
 # Misc
 .DS_Store
+*.pem
 .env
 .env.local
 .env.development.local
@@ -25,14 +25,23 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-.pnpm-debug.log*
 
 # IDE
-.vscode
-.idea
+.vscode/
+.idea/
 *.swp
 *.swo
 *~
+*.iml
 
 # OS
 Thumbs.db
+
+# Package managers
+.yarn/
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
